@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Alejandro Perez-canto – Desarrollador Full-Stack",
+      "description": "Desarrollador Full-Stack especializado en crear experiencias web modernas y atractivas. Diseño y desarrollo aplicaciones de alto rendimiento centradas en el usuario utilizando React, Next.js, TypeScript y otras tecnologías de vanguardia.",
+      "keywords": "Alejandro Perez-canto, desarrollador full-stack, desarrollador frontend, React, Next.js, TypeScript, JavaScript, Tailwind CSS, UI/UX, desarrollo web, diseño responsivo, optimización de rendimiento, integración de API, ingeniero de software, React Native, SSR, SSG, PWA, frameworks modernos, código limpio, CI/CD, Vercel, Netlify, GitHub Actions, accesibilidad, SEO, portafolio de desarrollador, código abierto, desarrollo ágil, aplicaciones escalables, UI interactiva, desarrollo basado en componentes, experiencia de usuario, interfaces modernas, soluciones digitales"
+    },
+    "about": {
+      "title": "Sobre Alejandro Perez-canto – Desarrollador Full-Stack",
+      "description": "Conozca la trayectoria profesional, habilidades y filosofía de desarrollo de Alejandro Perez-canto, un desarrollador Full-Stack con amplia experiencia en tecnologías web modernas. Especializado en crear soluciones digitales eficientes y elegantes que combinan excelencia técnica con diseño centrado en el usuario.",
+      "keywords": "Alejandro Perez-canto, desarrollador full-stack, especialista frontend, diseñador UI/UX, desarrollador React, experto en Next.js, desarrollador Tailwind CSS, programador TypeScript, ingeniero JavaScript, desarrollo web moderno, creador de productos digitales, arquitecto de aplicaciones web, habilidades frontend, experiencia en UI/UX, soluciones web escalables, optimización de rendimiento, diseño responsivo, arquitectura de componentes"
+    },
+    "contact": {
+      "title": "Contacto – Alejandro Perez-canto",
+      "description": "Póngase en contacto con Alejandro Perez-canto para colaboraciones, oportunidades freelance o consultas de desarrollo web. Conectemos y creemos experiencias digitales excepcionales.",
+      "keywords": "contactar a Alejandro Perez-canto, contratar desarrollador web, desarrollador frontend freelance, contacto desarrollador React, experto Next.js, desarrollador Tailwind CSS, consulta UI/UX, ingeniero frontend, consultas de desarrollador de software, colaboración en proyectos, servicios de desarrollo web, soluciones digitales, aplicaciones web escalables, soporte frontend, trabajar con desarrollador, mejoras de sitios web, desarrollo web moderno, formulario de contacto de desarrollador, consultas de negocios, consulta de programación"
+    },
+    "portfolio": {
+      "title": "Portafolio – Alejandro Perez-canto",
+      "description": "Explore el portafolio profesional de Alejandro Perez-canto, donde se presentan proyectos innovadores y soluciones digitales a medida, usando habilidades en desarrollo frontend, diseño UI/UX y tecnologías modernas.",
+      "keywords": "portafolio de Alejandro Perez-canto, portafolio de desarrollador web, proyectos frontend, trabajos de diseño UI/UX, aplicaciones React, proyectos Next.js, portafolio Tailwind CSS, aplicaciones web escalables, portafolio de código, desarrollo web moderno, trabajos de ingeniero de software, muestra de proyectos, diseño de productos digitales, casos de estudio de desarrollador, ingeniería frontend, diseño web responsivo, ejemplos de interfaz de usuario, galería de desarrollo web"
+    },
+    "services": {
+      "title": "Servicios – Alejandro Perez-canto",
+      "description": "Servicios profesionales de Alejandro Perez-canto: desarrollo web a medida, diseño UI/UX y soluciones escalables que impulsan el crecimiento digital de su negocio con tecnología moderna y enfoque en resultados.",
+      "keywords": "servicios de desarrollo web, desarrollo frontend, diseño UI/UX, desarrollador React, experto en Next.js, desarrollador Tailwind CSS, soluciones web modernas, aplicaciones web escalables, desarrollador web freelance, servicios de Alejandro Perez-canto, ingeniería de software, diseño de sitios web, desarrollo responsivo, UI basada en componentes, desarrollo de productos digitales, rendimiento frontend, soluciones web personalizadas, diseño de interfaz de usuario, servicios de desarrollador"
+    },
+    "not-found": {
+      "title": "Página No Encontrada - Alejandro Perez-canto",
+      "description": "La página que estás buscando no existe. Por favor, verifica la URL o regresa a la página de inicio."
+    },
+    "thankYou": {
+      "title": "Gracias",
+      "description": "¡Gracias por contactarme! Tu mensaje ha sido enviado correctamente.",
+      "keywords": "thank you page, contact confirmation, Alejandro Perez-canto, web developer",
+      "returnHome": "Regresar a la página de inicio"
+      
+    }
+  },
+  "header": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "toggleNavigation": "Alternar navegación"
+  },
+  "navigation": {
+    "services": "Servicios",
+    "contact": "Contacto",
+    "about": "Acerca de",
+    "portfolio": "Portafolio"
+  },
+  "home": {
+    "role": "Desarrollador Full-Stack",
+    "description": "Desarrollo interfaces intuitivas centradas en la usabilidad y eficiencia, convirtiendo ideas complejas en interacciones simples y atractivas.",
+    "ctaLabel": "Contáctame"
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Soluciones Innovadoras Adaptadas a Tus Necesidades",
+    "intro": "Transformo ideas en soluciones digitales impactantes, asegurando tu crecimiento y éxito en el entorno digital.",
+    "responsiveDesign": {
+      "title": "Diseño Responsivo",
+      "tagline": "Experiencias fluidas en todos los dispositivos",
+      "description": "Creo diseños web responsivos que aseguran que tu sitio web se vea genial en todos los dispositivos, desde computadoras de escritorio hasta teléfonos inteligentes.",
+      "stats": {
+        "mobileCompatibility": "Compatibilidad Móvil",
+        "averageLoadTime": "Tiempo de Carga Promedio",
+        "conversionIncrease": "Incremento de Conversión"
+      }
+    },
+    "uiUxDesign": {
+      "title": "Diseño UI/UX",
+      "tagline": "Interfaces intuitivas que deleitan a los usuarios",
+      "description": "Me especializo en diseñar interfaces de usuario intuitivas y visualmente atractivas que mejoran la experiencia del usuario y fomentan su interacción.",
+      "stats": {
+        "userSatisfaction": "Satisfacción del Usuario",
+        "bounceRateReduction": "Reducción de Tasa de Rebote",
+        "averageUserRating": "Calificación Promedio del Usuario"
+      }
+    },
+    "performanceOptimization": {
+      "title": "Optimización de Rendimiento",
+      "tagline": "Experiencias ultrarrápidas",
+      "description": "Optimizo el rendimiento de tu sitio web para asegurar tiempos de carga rápidos e interacciones fluidas, mejorando la satisfacción general del usuario.",
+      "stats": {
+        "pageSpeedScore": "Puntuación de Velocidad de Página",
+        "firstContentfulPaint": "Primer Renderizado de Contenido",
+        "trafficIncrease": "Incremento de Tráfico"
+      }
+    },
+    "accessibility": {
+      "title": "Accesibilidad",
+      "tagline": "Diseño inclusivo para todos",
+      "description": "Implemento estándares de accesibilidad para hacer que tu sitio web sea utilizable por todos, incluidas las personas con discapacidades, asegurando inclusión y cumplimiento con los estándares web.",
+      "stats": {
+        "complianceLevel": "Nivel de Cumplimiento",
+        "screenReaderCompatible": "Compatible con Lector de Pantalla",
+        "accessibilityRating": "Calificación de Accesibilidad"
+      }
+    },
+    "learnMore": "Ver más",
+    "viewService": "Ver servicio {index}",
+    "viewAllServices": "Ver todos los servicios"
+  },
+  "skillsExperience": {
+    "skillsExperience": "Habilidades y Experiencia",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "stack": "Stack",
+    "education": "Educación",
+    "seniorDeveloper": "Desarrollador Senior",
+    "seniorDeveloperDescription": "Lideré el desarrollo de aplicaciones web empresariales, implementé arquitectura moderna de front-end utilizando React y Next.js, colaboré estrechamente con diseñadores y otros desarrolladores para crear interfaces de usuario intuitivas y atractivas que cumplieran con los requisitos del cliente y mejoraran la experiencia del usuario.",
+    "frontendDeveloper": "Desarrollador Front-End",
+    "frontendDeveloperDescription": "Desarrollé y mantuve la presencia digital de Union Radio, incluyendo sitios web y aplicaciones web. Colaboré con diseñadores para crear interfaces responsivas y accesibles, asegurando una experiencia óptima para la audiencia en línea de la estación. Implementé soluciones de comercio electrónico para la venta de contenido digital y gestioné sistemas de gestión de contenido para la publicación de noticias, programas y podcasts.",
+    "frontendDevelopment": "Desarrollo Frontend",
+    "backendDevelopment": "Desarrollo Backend",
+    "databaseManagement": "Gestión de Bases de Datos",
+    "uiUxDesign": "Diseño UI/UX",
+    "performanceOptimization": "Optimización de Rendimiento",
+    "deploymentDevOps": "Despliegue y DevOps",
+    "santiagoMarinoUniversity": "Universidad Santiago Mariño",
+    "universityOfTechnology": "Universidad de Tecnología",
+    "present": "Presente",
+    "santiagoMarinoUniversityDescription": "Estudiando los modelos y metodologías para el diseño, desarrollo e implementación de sistemas de software complejos.",
+    "professionalCertifications": "Certificaciones Profesionales"
+  },
+  "simpleCta": {
+    "title": "Cuéntame sobre tu proyecto",
+    "description": "Mi objetivo es ayudarte a identificar y aprovechar oportunidades para impulsar tu proyecto.",
+    "ctaLabel": "Saluda"
+  },
+  "contact": {
+    "eyebrow": "Contáctame",
+    "title": "Trabajemos juntos",
+    "intro": "Estamos ansiosos por saber de ti.",
+    "scheduleHeading": "Busquemos un horario para conectarnos",
+    "scheduleTitle": "Agendar cita"
+  },
+  "contactDetails": {
+    "operations": "Operaciones",
+    "operationsDescription": "Trabajo de forma remota y estoy disponible para trabajar con clientes de cualquier parte del mundo. Si prefieres una interacción cara a cara, ¡programemos una videollamada!",
+    "email": "Correo electrónico"
+  },
+  "contactForm": {
+    "workInquiries": "Consultas de trabajo",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "company": "Empresa",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "sending": "Enviando...",
+    "cta": "Trabajemos juntos",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "errorMessage": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "unexpectedErrorMessage": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo."
+  },
+  "footer": {
+    "navigation": "Navegación",
+    "connect": "Conectar",
+    "home": "Inicio",
+    "contact": "Contáctame",
+    "about": "Sobre mí",
+    "portfolio": "Portafolio",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "github": "Github",
+    "instagram": "Instagram"
+  },
+  "newsletter": {
+    "signup": "Suscríbete a nuestro boletín",
+    "description": "Suscríbete para recibir las últimas noticias de diseño, artículos, recursos e inspiración.",
+    "placeholder": "Dirección de correo electrónico",
+    "submit": "Enviar"
+  },
+  "ServicesHero": {
+    "servicesTagline": "Servicios de Diseño y Desarrollo",
+    "mainHeading": "Creando experiencias digitales con propósito",
+    "description": "Construyo sitios web y aplicaciones hermosas y funcionales que ayudan a las empresas a conectarse con su audiencia y alcanzar sus objetivos.",
+    "viewWork": "Ver mi trabajo",
+    "getInTouch": "Contáctame",
+    "serviceCount": "20+ servicios",
+    "serviceNeeds": "para cada necesidad"
+  },
+  "ServicesShowcase": {
+    "categories": {
+      "all": "Todos los servicios",
+      "design": "Diseño",
+      "development": "Desarrollo",
+      "performance": "Rendimiento",
+      "security": "Seguridad",
+      "content": "Contenido",
+      "infrastructure": "Infraestructura"
+    },
+    "items": {
+      "0": {
+        "title": "Diseño adaptable",
+        "description": "Experiencias fluidas en todos los dispositivos. Creo diseños web responsivos que garantizan que tu sitio se vea genial en cualquier pantalla, desde equipos de escritorio hasta teléfonos."
+      },
+      "1": {
+        "title": "Diseño UI/UX",
+        "description": "Interfaces intuitivas que encantan a los usuarios. Me especializo en diseñar interfaces visualmente atractivas que mejoran la experiencia y la interacción."
+      },
+      "2": {
+        "title": "Optimización del rendimiento",
+        "description": "Experiencias ultrarrápidas que convierten. Optimizo el rendimiento de tu sitio para garantizar tiempos de carga rápidos e interacciones fluidas."
+      },
+      "3": {
+        "title": "Accesibilidad",
+        "description": "Diseño inclusivo para todos. Implemento estándares de accesibilidad para que tu sitio sea usable por cualquier persona y cumpla las directrices web."
+      },
+      "4": {
+        "title": "SEO y Marketing",
+        "description": "Aumenta la visibilidad en los buscadores. Integro buenas prácticas SEO y estrategias de marketing para que tu sitio posicione y atraiga audiencias objetivo."
+      },
+      "5": {
+        "title": "Soluciones de comercio electrónico",
+        "description": "Tiendas online a medida para hacer crecer tu negocio. Desde listados intuitivos hasta pagos seguros, garantizo una experiencia de compra fluida."
+      },
+      "6": {
+        "title": "Mantenimiento y soporte",
+        "description": "Tranquilidad para tu presencia online. Brindo monitoreo continuo, actualizaciones regulares y soporte dedicado para mantener tu sitio funcionando sin problemas."
+      },
+      "7": {
+        "title": "Seguridad y cumplimiento",
+        "description": "Protege tu sitio y los datos de tus clientes. Implemento medidas de seguridad robustas y garantizo el cumplimiento de normativas del sector."
+      },
+      "8": {
+        "title": "Globalización e i18n",
+        "description": "Llega a audiencias de todo el mundo. Localizo tu contenido, moneda e idioma para una experiencia realmente global."
+      },
+      "9": {
+        "title": "Gestión de bases de datos",
+        "description": "Organiza y optimiza tus datos. Desde el diseño de esquemas hasta la afinación del rendimiento, aseguro un manejo fiable y seguro de la información."
+      },
+      "10": {
+        "title": "Integración en la nube",
+        "description": "Soluciones escalables para aplicaciones modernas. Integro servicios en la nube, garantizando flexibilidad y menores costes de infraestructura."
+      },
+      "11": {
+        "title": "Gestión de usuarios",
+        "description": "Registro y autenticación simplificados. Construyo sistemas de gestión de usuarios seguros con controles de acceso basados en roles."
+      },
+      "12": {
+        "title": "Estrategia de contenidos",
+        "description": "Copy atractivo que convierte. Elaboro un plan estratégico de contenidos que resuene con tu audiencia y genere interacciones significativas."
+      },
+      "13": {
+        "title": "Identidad de marca",
+        "description": "Destaca entre la multitud. Te ayudo a establecer una experiencia de marca coherente mediante logos, paletas de colores y guías visuales."
+      },
+      "14": {
+        "title": "Analítica e insights",
+        "description": "Decisiones basadas en datos para crecer. Configuro herramientas de analítica y proporciono insights accionables para mejorar el rendimiento de tu sitio."
+      },
+      "15": {
+        "title": "Producción multimedia",
+        "description": "Involucra a tu audiencia con contenido dinámico. Integro elementos multimedia como imágenes, vídeos y animaciones para mejorar la experiencia del usuario."
+      },
+      "16": {
+        "title": "Crecimiento y escalabilidad",
+        "description": "Soporte para negocios en expansión. Diseño arquitecturas que manejan de forma fluida el incremento de tráfico y nuevas funcionalidades."
+      },
+      "17": {
+        "title": "Integración de APIs y terceros",
+        "description": "Amplía funcionalidades sin esfuerzo. Conecto tus sistemas a servicios externos, agilizando flujos de trabajo y sumando nuevas capacidades."
+      },
+      "18": {
+        "title": "Monitoreo de aplicaciones",
+        "description": "Anticípate a problemas potenciales. Implemento soluciones de monitoreo y logging para detectar y resolver incidencias de forma rápida."
+      },
+      "19": {
+        "title": "Despliegue continuo",
+        "description": "Lanzamientos rápidos y actualizaciones eficientes. Configuro pipelines CI/CD para automatizar pruebas, integración y despliegue."
+      },
+      "20": {
+        "title": "Consultoría a medida",
+        "description": "Orientación adaptada a desafíos únicos. Ofrezco asesoría experta y estrategias personalizadas para abordar requerimientos específicos."
+      }
+    }
+  },
+  "validation": {
+    "name": {
+      "required": "El nombre es obligatorio",
+      "short": "El nombre debe tener al menos 2 caracteres",
+      "long": "El nombre debe tener como máximo 50 caracteres"
+    },
+    "lastName": {
+      "required": "El apellido es obligatorio",
+      "short": "El apellido debe tener al menos 2 caracteres",
+      "long": "El apellido debe tener como máximo 50 caracteres"
+    },
+    "phone": {
+      "required": "El teléfono es obligatorio",
+      "short": "El teléfono debe tener al menos 10 dígitos",
+      "long": "El teléfono debe tener como máximo 50 caracteres"
+    },
+    "email": {
+      "invalid": "Introduce un correo electrónico válido",
+      "required": "El correo electrónico es obligatorio",
+      "short": "El correo debe tener al menos 4 caracteres",
+      "long": "El correo debe tener como máximo 500 caracteres"
+    },
+    "message": {
+      "required": "El mensaje es obligatorio",
+      "short": "El mensaje debe tener al menos 10 caracteres",
+      "long": "El mensaje debe tener como máximo 500 caracteres"
+    },
+    "service": {
+      "short": "El nombre del servicio debe tener al menos 2 caracteres",
+      "long": "El nombre del servicio debe tener como máximo 50 caracteres"
+    }
+  },
+  "About": {
+    "name": "Alejandro\nPerez-canto",
+    "role": "Desarrollador Full-Stack",
+    "heroDescription": "Creo experiencias digitales que combinan diseño atractivo con código limpio y eficiente. Con más de 5 años de experiencia, me especializo en crear aplicaciones web responsivas que resuelven problemas reales de negocios.",
+    "getInTouch": "Contáctame",
+    "downloadCV": "Descargar CV",
+    "emailLabel": "Enviar email",
+    "githubLabel": "Visitar perfil de GitHub",
+    "profileImageAlt": "Alejandro Perez-canto",
+    "aboutMeTitle": "Sobre Mí",
+    "bio1": "Soy un desarrollador y diseñador. Mi viaje en tecnología comenzó hace más de 5 años, y desde entonces he trabajado con startups, agencias y empresas establecidas para construir productos que los usuarios aman.",
+    "bio2": "Con formación en Ingeniería de Sistemas y un ojo agudo para el diseño, busco cerrar la brecha entre funcionalidad y estética. Creo que los mejores productos digitales son aquellos que resuelven problemas reales, mientras proporcionan una experiencia de usuario fluida y agradable.",
+    "quote": "\"No solo construyo sitios web y aplicaciones; creo experiencias digitales que conectan a las empresas con sus audiencias de manera significativa.\"",
+    "bio3": "Cuando no estoy programando o diseñando, me encontrarás explorando nuevos senderos, experimentando con fotografía. Creo que obtener inspiración de diversas fuentes es clave para la resolución creativa de problemas en tecnología."
+  },
+  "BeyondCoding": {
+    "title": "Más Allá del Código",
+    "hobbiesTitle": "Intereses y Pasatiempos",
+    "philosophyTitle": "Valores y Filosofía",
+    "hobbies": {
+      "videoGames": "Videojuegos",
+      "anime": "Anime",
+      "music": "Música de los 80",
+      "photography": "Fotografía",
+      "animals": "Animales",
+      "hiking": "Senderismo",
+      "traveling": "Viajar"
+    },
+    "philosophy": {
+      "userCentered": "Diseño Centrado en Usuario",
+      "learning": "Aprendizaje Continuo",
+      "simplicity": "Simplicidad y Claridad",
+      "innovation": "Innovación",
+      "efficiency": "Eficiencia",
+      "minimalism": "Minimalismo",
+      "excellence": "Excelencia"
+    }
+  },
+  "Portfolio": {
+    "heroTitle1": "Un Recorrido Por Mis",
+    "heroTitle2": "Creaciones de Desarrollo"
+  },
+  "showcase": {
+    "featured": "Destacado",
+    "role": "Rol",
+    "duration": "Duración",
+    "client": "Cliente",
+    "year": "Año",
+    "live": "Demo en vivo",
+    "open": "Abrir detalles",
+    "close": "Cerrar detalles",
+    "overview": "Resumen",
+    "technologies": "Tecnologías",
+    "challenges": "Retos y soluciones",
+    "gallery": {
+      "prev": "Imagen anterior",
+      "next": "Imagen siguiente",
+      "view": "Ver pantalla completa",
+      "exit": "Salir de pantalla completa"
+    },
+    "tags": {
+      "branding": "Branding",
+      "website": "Rediseño web",
+      "animations": "Animaciones",
+      "uiux": "UI/UX",
+      "next": "Next.js",
+      "tailwind": "Tailwind CSS",
+      "typescript": "TypeScript",
+      "accessibility": "Accesibilidad",
+      "rebuild": "Reconstrucción web",
+      "multilang": "Multi-idioma",
+      "seo": "SEO",
+      "performance": "Optimización de rendimiento"
+    },
+    "projects": {
+      "rdg": {
+        "title": "Rediseño del sitio web de RDG",
+        "subtitle": "Renovación completa de marca y web",
+        "description": "Reformé la identidad de marca de RDG y reestructuré su sitio web con animaciones de vanguardia y efectos dinámicos.",
+        "longDescription": "El proyecto incluyó un rebranding total y rediseño completo de la presencia digital de RDG. Creé un sitio desde cero, integrando animaciones innovadoras que dan vida al sitio y mejoran la interacción.\n\nEl uso creativo de animaciones aportó una estética moderna y una mejor experiencia de usuario.",
+        "challenges": "Integrar animaciones fluidas sin perder rendimiento exigió una optimización minuciosa y estrategias de diseño innovadoras.",
+        "role": "Diseñador y desarrollador principal"
+      },
+      "medeiros": {
+        "title": "Reconstrucción del sitio de Medeiros Wines",
+        "subtitle": "De HTML estático a experiencia Next.js",
+        "description": "Recreé el sitio de Medeiros Wines mejorando UI y accesibilidad, migrándolo de HTML simple a Next.js.",
+        "longDescription": "El sitio se reconstruyó desde cero, conservando el diseño original y añadiendo mejoras en UI y accesibilidad. La transición a Next.js aportó mejor rendimiento y experiencia de usuario.",
+        "challenges": "Replicar fielmente un sitio existente y mejorar la accesibilidad requirió atención meticulosa al detalle.",
+        "role": "Desarrollador Full-Stack"
+      },
+      "proamerican": {
+        "title": "Mejora de Pro American Trailers",
+        "subtitle": "Rediseño multi-idioma y optimizado para SEO",
+        "description": "Añadí soporte multi-idioma y páginas SEO, mejorando el rendimiento con Next.js, TypeScript y Tailwind CSS.",
+        "longDescription": "Manteniendo el diseño original, incorporé soporte multi-idioma y páginas SEO. Las optimizaciones garantizan un sitio rápido, responsive y accesible globalmente.",
+        "challenges": "Combinar soporte multi-idioma y SEO sin sacrificar rendimiento requirió planificación detallada.",
+        "role": "Desarrollador Full-Stack"
+      }
+    }
+  }
+}

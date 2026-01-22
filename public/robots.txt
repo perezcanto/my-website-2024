@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://perez-canto.com/sitemap.xml
