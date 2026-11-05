@@ -20,7 +20,7 @@ const Container: React.FC<ContainerProps> = ({
   ...props
 }) => {
   return (
-    <Tag className={`px-4  relative ${sectionClassName}`} {...props}>
+    <Tag className={`px-4 sm:px-6 lg:px-8 relative ${sectionClassName}`} {...props}>
       {background && (
         <div className="absolute inset-0 z-0">
           {background}
@@ -31,7 +31,7 @@ const Container: React.FC<ContainerProps> = ({
         <>{sectionChildren}</>
       )}
 
-      <div className={`relative mx-auto w-full max-w-screen-2xl ${divClassName}`}>
+      <div className={`relative mx-auto w-full max-w-7xl ${divClassName}`}>
         {children}
       </div>
     </Tag>

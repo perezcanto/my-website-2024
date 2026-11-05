@@ -7,9 +7,9 @@ export default function AboutSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Alejandro Perez-canto",
-    "url": locale === 'en' ? "https://www.perez-canto.com/en/about" : "https://www.perez-canto.com/es/sobre",
+    "url": locale === 'en' ? "https://www.perez-canto.com/en/about" : "https://www.perez-canto.com/es/acerca",
     "sameAs": [
-      "www.linkedin.com/in/alejandro-perez-canto-8b8432193",
+      "https://www.linkedin.com/in/alejandro-perez-canto-8b8432193",
       "https://github.com/perezcanto"
     ],
     "jobTitle": locale === 'en' ? "Full-Stack Developer" : "Desarrollador Full-Stack",

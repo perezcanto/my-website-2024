@@ -106,118 +106,51 @@ const techStack = [
 
 export default function SkillsExperience() {
   const t = useTranslations('skillsExperience')
-  const [activeTab, setActiveTab] = useState('experience')
+  const [activeTab, setActiveTab] = useState('skills')
 
   return (
     <section className="w-full border-b border-gray-100 py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-5xl">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div>
           <div className="flex flex-col space-y-8">
             <h2 className="heading-6 font-semibold tracking-tight text-black">
               {t('skillsExperience')}
             </h2>
 
             {/* Tabs */}
-            <div className="flex flex-wrap gap-2 border-b border-gray-200">
-              <button
-                onClick={() => setActiveTab('experience')}
-                className={`rounded-t-lg px-4 py-2 text-sm font-medium transition-colors ${
-                  activeTab === 'experience'
-                    ? 'bg-black text-white'
-                    : 'bg-gray-50 text-black hover:bg-gray-100'
-                }`}
-              >
-                {t('experience')}
-              </button>
-              <button
-                onClick={() => setActiveTab('skills')}
-                className={`rounded-t-lg px-4 py-2 text-sm font-medium transition-colors ${
-                  activeTab === 'skills'
-                    ? 'bg-black text-white'
-                    : 'bg-gray-50 text-black hover:bg-gray-100'
-                }`}
-              >
-                {t('skills')}
-              </button>
-
-              <button
-                onClick={() => setActiveTab('stack')}
-                className={`rounded-t-lg px-4 py-2 text-sm font-medium transition-colors ${
-                  activeTab === 'stack'
-                    ? 'bg-black text-white'
-                    : 'bg-gray-50 text-black hover:bg-gray-100'
-                }`}
-              >
-                {t('stack')}
-              </button>
-              <button
-                onClick={() => setActiveTab('education')}
-                className={`rounded-t-lg px-4 py-2 text-sm font-medium transition-colors ${
-                  activeTab === 'education'
-                    ? 'bg-black text-white'
-                    : 'bg-gray-50 text-black hover:bg-gray-100'
-                }`}
-              >
-                {t('education')}
-              </button>
+            <div role="tablist" className="flex flex-wrap gap-2 border-b border-gray-200">
+              {(['skills', 'stack', 'education'] as const).map((tab) => (
+                <button
+                  key={tab}
+                  type="button"
+                  role="tab"
+                  aria-selected={activeTab === tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`relative rounded-t-lg px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${
+                    activeTab === tab
+                      ? 'text-white'
+                      : 'bg-gray-50 text-black hover:bg-gray-100'
+                  }`}
+                >
+                  {activeTab === tab && (
+                    <motion.span
+                      layoutId="skills-active-tab"
+                      className="absolute inset-0 rounded-t-lg bg-black"
+                      transition={{ type: 'spring', stiffness: 420, damping: 36 }}
+                    />
+                  )}
+                  <span className="relative z-10">{t(tab)}</span>
+                </button>
+              ))}
             </div>
 
             {/* Tab Content */}
             <div className="pt-4">
-              {activeTab === 'experience' && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-8"
-                >
-                  <div className="relative border-l border-gray-200 pl-8">
-                    <div className="absolute left-[-8px] top-0 h-4 w-4 rounded-full bg-black"></div>
-                    <div className="space-y-2">
-                      <div className="flex flex-wrap items-start justify-between">
-                        <h3 className="font-title text-lg font-bold text-black md:text-xl">
-                          {t('seniorDeveloper')}
-                        </h3>
-                        <span className="text-xs font-bold text-gray-500 md:text-sm">
-                          2021 - {t('present')}
-                        </span>
-                      </div>
-                      <h4 className="text-sm font-semibold text-black md:text-base">
-                        Colmena Digital
-                      </h4>
-                      <p className="text-gray-600">
-                        {t('seniorDeveloperDescription')}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="relative border-l border-gray-200 pl-8">
-                    <div className="absolute left-[-8px] top-0 h-4 w-4 rounded-full bg-gray-400"></div>
-                    <div className="space-y-2">
-                      <div className="flex flex-wrap items-start justify-between">
-                        <h3 className="font-title text-lg font-bold text-black md:text-xl">
-                          {t('frontendDeveloper')}
-                        </h3>
-                        <span className="text-xs font-bold text-gray-500 md:text-sm">
-                          2018 - 2021
-                        </span>
-                      </div>
-                      <h4 className="text-sm font-semibold text-black md:text-base">
-                        Union Radio
-                      </h4>
-                      <p className="text-gray-600">
-                        {t('frontendDeveloperDescription')}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-
               {activeTab === 'skills' && (
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                   className="grid grid-cols-1 gap-6 md:grid-cols-2"
                 >
                   <div className="space-y-4">
@@ -312,15 +245,18 @@ export default function SkillsExperience() {
 
               {activeTab === 'stack' && (
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                     {techStack.map((tech, index) => (
-                      <div
+                      <motion.div
                         key={tech.name}
-                        className="flex flex-col items-center rounded-lg bg-gray-50 p-4 text-center transition-all border border-gray-200"
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.35, delay: Math.min(index * 0.025, 0.3), ease: [0.16, 1, 0.3, 1] }}
+                        className="flex flex-col items-center rounded-lg border border-gray-200 bg-gray-50 p-4 text-center transition-colors duration-200 hover:border-gray-400 hover:bg-white"
                       >
                         <div className="flex h-16 w-16 items-center justify-center">
                           {tech.icon}
@@ -328,7 +264,7 @@ export default function SkillsExperience() {
                         <h3 className="mb-2 font-medium text-black">
                           {tech.name}
                         </h3>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
                 </motion.div>
@@ -336,9 +272,9 @@ export default function SkillsExperience() {
 
               {activeTab === 'education' && (
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                   className="space-y-8"
                 >
                   <div className="relative border-l border-gray-200 pl-8">

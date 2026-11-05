@@ -3,10 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import {
   motion,
-  useScroll,
-  useTransform,
-  useSpring,
   useInView,
+  useReducedMotion,
   AnimatePresence,
 } from 'framer-motion'
 import { FiCode, FiLayers, FiZap } from 'react-icons/fi'
@@ -28,10 +26,11 @@ export default function ImmersiveServicesMinimalist() {
   const [isHovering, setIsHovering] = useState(false)
   const containerRef = useRef(null)
   const headerRef = useRef(null)
-  const isHeaderInView = useInView(headerRef, { once: true })
-  const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start end', 'end start'] })
-  const y = useTransform(scrollYProgress, [0, 1], [0, -100])
-  const springY = useSpring(y, { stiffness: 100, damping: 30 })
+  // Autoplay and the Lottie loop only run while the carousel is on screen.
+  const isOnScreen = useInView(containerRef, { amount: 0.25 })
+  const reduce = useReducedMotion()
+  const AUTOPLAY_MS = 10000
+  const isPaused = isHovering || !isOnScreen
 
   const services = [
     {
@@ -95,13 +94,14 @@ export default function ImmersiveServicesMinimalist() {
     })
   }, [])
 
+  // Restart the countdown on every change so the progress dot and the switch stay in sync.
   useEffect(() => {
-    if (isHovering) return
-    const interval = setInterval(() => {
+    if (isPaused) return
+    const timeout = setTimeout(() => {
       setActiveService((prev) => (prev + 1) % services.length)
-    }, 10000)
-    return () => clearInterval(interval)
-  }, [isHovering, services.length])
+    }, AUTOPLAY_MS)
+    return () => clearTimeout(timeout)
+  }, [isPaused, activeService, services.length])
 
   return (
     <section ref={containerRef} className="relative w-full overflow-hidden bg-white">
@@ -117,34 +117,44 @@ export default function ImmersiveServicesMinimalist() {
             </p>
           </SectionIntro>
         </div>
-        <div className="relative">
-          <div className="mb-16 flex flex-wrap justify-center gap-3">
+        <div
+          className="relative"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+          onFocusCapture={() => setIsHovering(true)}
+          onBlurCapture={() => setIsHovering(false)}
+        >
+          <div className="mb-12 flex flex-wrap justify-center gap-2 md:mb-16 md:gap-3">
             {services.map((service, index) => (
-              <motion.button
+              <button
                 key={service.id}
+                type="button"
                 onClick={() => setActiveService(index)}
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-                className={`relative overflow-hidden border border-gray-200 rounded-3xl px-5 py-3 text-sm font-medium transition-all duration-300 ${
+                aria-pressed={activeService === index}
+                className={`relative rounded-full border px-5 py-3 text-sm font-medium transition-[color,border-color,transform] duration-200 ease-out active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${
                   activeService === index
-                    ? 'bg-black text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? 'border-black text-white'
+                    : 'border-gray-200 bg-gray-100 text-gray-700 hover:border-gray-300 hover:text-black'
                 }`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
               >
+                {activeService === index && (
+                  <motion.span
+                    layoutId="services-active-pill"
+                    className="absolute inset-0 rounded-full bg-black"
+                    transition={{ type: 'spring', stiffness: 420, damping: 36 }}
+                  />
+                )}
                 <span className="relative z-10">{service.title}</span>
-              </motion.button>
+              </button>
             ))}
           </div>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={activeService}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="overflow-hidden rounded-3xl border-2 border-black "
+              initial={{ opacity: 0, y: reduce ? 0 : 12 }}
+              animate={{ opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
+              exit={{ opacity: 0, y: reduce ? 0 : -8, transition: { duration: 0.18, ease: 'easeIn' } }}
+              className="overflow-hidden rounded-3xl border-2 border-black"
             >
               <div className="lg:flex ">
                 <div className="p-8 md:p-12 bg-black lg:w-1/2">
@@ -158,9 +168,9 @@ export default function ImmersiveServicesMinimalist() {
                     {services[activeService].stats.map((stat, i) => (
                       <motion.div
                         key={i}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: reduce ? 0 : 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
+                        transition={{ duration: 0.4, delay: 0.15 + i * 0.06, ease: [0.16, 1, 0.3, 1] }}
                         className="rounded-xl border border-gray-200 p-4 text-center"
                       >
                         <p className="text-xl font-bold text-white">{stat.value}</p>
@@ -168,7 +178,7 @@ export default function ImmersiveServicesMinimalist() {
                       </motion.div>
                     ))}
                   </div>
-                  <Button href="/portfolio" invert className=" ">
+                  <Button href="/services" invert>
                     {t('learnMore')}
                   </Button>
                 </div>
@@ -177,6 +187,9 @@ export default function ImmersiveServicesMinimalist() {
                   <div className="h-full w-full md:p-20">
                     {isClient && Lottie ? (
                       <Lottie
+                        isPaused={!isOnScreen}
+                        isClickToPauseDisabled
+                        ariaRole="presentation"
                         options={{
                           loop: true,
                           autoplay: true,
@@ -194,25 +207,42 @@ export default function ImmersiveServicesMinimalist() {
               </div>
             </motion.div>
           </AnimatePresence>
-          <div className="mt-8 flex justify-center gap-2">
+          {/* Dots double as the autoplay timer: the active one fills over AUTOPLAY_MS. */}
+          <div className="mt-8 flex justify-center gap-1">
             {services.map((_, index) => (
               <button
                 key={index}
+                type="button"
                 onClick={() => setActiveService(index)}
-                className={`h-2 w-2 rounded-full transition-all duration-300 ${
-                  activeService === index ? 'w-8 bg-black' : 'bg-gray-300'
-                }`}
+                className="group flex h-6 items-center px-1"
                 aria-label={t('viewService', { index: index + 1 })}
-              />
+                aria-current={activeService === index}
+              >
+                <span
+                  className={`relative block h-2 overflow-hidden rounded-full transition-[width,background-color] duration-300 ease-out ${
+                    activeService === index ? 'w-8 bg-gray-300' : 'w-2 bg-gray-300 group-hover:bg-gray-400'
+                  }`}
+                >
+                  {activeService === index && (
+                    <motion.span
+                      key={`${activeService}-${isPaused}`}
+                      className="absolute inset-0 origin-left rounded-full bg-black"
+                      initial={{ scaleX: isPaused || reduce ? 1 : 0 }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: isPaused || reduce ? 0 : AUTOPLAY_MS / 1000, ease: 'linear' }}
+                    />
+                  )}
+                </span>
+              </button>
             ))}
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: reduce ? 0 : 12 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mt-5 text-center"
+          className="mt-6 text-center"
         >
           <Button href="/services" className="bg-black px-8 py-3 font-medium text-white transition-colors hover:bg-gray-900">
             {t('viewAllServices')}

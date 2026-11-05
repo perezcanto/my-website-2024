@@ -1,59 +1,33 @@
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { ServicesSchema } from '@/components'
+import JsonLd from '@/components/seo/JsonLd'
+import { asLocale, breadcrumbNode, buildMetadata, graph, webPageNode } from '@/lib/seo'
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
+type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const locale = asLocale((await params).locale)
   const t = await getTranslations({ locale, namespace: 'metadata.services' })
-
-  return {
-    title: t("title"),
-    description: t("description"),
-    keywords: t("keywords"),
-
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      images: [
-        {
-          url: `${process.env.APP_URL}/images/hero.png`,
-          width: 800,
-          height: 600,
-        },
-      ],
-    },
-    twitter: {
-      images: [
-        {
-          url: `${process.env.APP_URL}/images/hero.png`,
-          width: 800,
-          height: 600,
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://www.perez-canto.com/${locale}/services`,
-      languages: {
-        'en': 'https://www.perez-canto.com/en/services',
-        'es': 'https://www.perez-canto.com/es/servicios',
-      },
-    },
-    robots: { index: true, follow: true }
-  };
+  return buildMetadata({ page: 'services', locale, title: t('title'), description: t('description') })
 }
 
-export default function RootLayout({
+export default async function ServicesLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params,
+}: Readonly<{ children: React.ReactNode }> & Props) {
+  const locale = asLocale((await params).locale)
+  const t = await getTranslations({ locale, namespace: 'metadata.services' })
+  const nav = await getTranslations({ locale, namespace: 'navigation' })
+
   return (
     <>
+      <JsonLd
+        data={graph(
+          webPageNode({ locale, page: 'services', name: t('title'), description: t('description') }),
+          breadcrumbNode(locale, 'services', nav('services')),
+        )}
+      />
       <ServicesSchema />
       {children}
     </>

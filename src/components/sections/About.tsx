@@ -19,7 +19,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="w-full border-b border-gray-100 py-16 md:py-24 lg:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -88,10 +88,12 @@ export default function AboutPage() {
             >
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/images/alejo.jpg"
-                  alt="Alejandro Perez-canto"
+                  src="/images/alejandro-perez-canto.jpg"
+                  alt={t('profileImageAlt')}
                   fill
-                  style={{ objectPosition: '0 75%' }}
+                  priority
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  style={{ objectPosition: 'center 72%' }}
                   className="object-cover"
                 />
               </div>
@@ -102,8 +104,8 @@ export default function AboutPage() {
 
       {/* Biography Section */}
       <section className="w-full border-b border-gray-100 py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-5xl">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

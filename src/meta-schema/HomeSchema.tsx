@@ -16,7 +16,7 @@ export default function HomeSchema() {
       "name": "Alejandro Perez-canto",
       "url": "https://www.perez-canto.com",
       "sameAs": [
-        "www.linkedin.com/in/alejandro-perez-canto-8b8432193",
+        "https://www.linkedin.com/in/alejandro-perez-canto-8b8432193",
         "https://github.com/perezcanto"
       ]
     },

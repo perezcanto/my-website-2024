@@ -1,18 +1,18 @@
 {
   "metadata": {
     "home": {
-      "title": "Alejandro Perez-canto – Full-Stack Developer",
-      "description": "Full-Stack Developer specializing in creating modern and engaging web experiences. I design and develop high-performance, user-centered applications using React, Next.js, TypeScript, and other cutting-edge technologies.",
+      "title": "Alejandro Perez-canto | Full-Stack Developer, React & Next.js",
+      "description": "Alejandro Perez-canto is a full-stack developer and UI/UX designer building fast, accessible, SEO-optimized websites with React, Next.js and TypeScript.",
       "keywords": "Alejandro Perez-canto, full-stack developer, frontend developer, React, Next.js, TypeScript, JavaScript, Tailwind CSS, UI/UX, web development, responsive design, performance optimization, API integration, software engineer, React Native, SSR, SSG, PWA, modern frameworks, clean code, CI/CD, Vercel, Netlify, GitHub Actions, accessibility, SEO, developer portfolio, open source, agile development, scalable apps, interactive UI, component-based development, user experience, modern interfaces, digital solutions"
     },
     "about": {
-      "title": "About Alejandro Perez-canto – Full-Stack Developer",
-      "description": "Discover the professional journey, skills, and development philosophy of Alejandro Perez-canto, a Full-Stack Developer with extensive experience in modern web technologies. Specialized in creating efficient and elegant digital solutions that combine technical excellence with user-centered design.",
+      "title": "About Alejandro Perez-canto | Full-Stack Developer",
+      "description": "Meet Alejandro Perez-canto: a full-stack developer with 5+ years building web applications with React, Next.js and TypeScript. Background, stack and values.",
       "keywords": "Alejandro Perez-canto, full-stack developer, frontend specialist, UI/UX designer, React developer, Next.js expert, Tailwind CSS developer, TypeScript programmer, JavaScript engineer, modern web development, digital product creator, web application architect, frontend skills, UI/UX expertise, scalable web solutions, performance optimization, responsive design, component architecture"
     },
     "contact": {
-      "title": "Contact – Alejandro Perez-canto",
-      "description": "Get in touch with Alejandro Perez-canto for collaborations, freelance opportunities, or web development consultations. Let's connect and create exceptional digital experiences together.",
+      "title": "Contact | Alejandro Perez-canto, Full-Stack Developer",
+      "description": "Have a web project? Get in touch with Alejandro Perez-canto. I work remotely with clients worldwide, by email or video call.",
       "keywords": "contact Alejandro Perez-canto, hire web developer, freelance frontend developer, React developer contact, Next.js expert, Tailwind CSS developer, UI/UX consultation, frontend engineer, software developer inquiries, project collaboration, web development services, digital solutions, scalable web apps, frontend support, work with developer, website improvements, modern web development, developer contact form, business inquiries, coding consultation"
     },
     "portfolio": {
@@ -21,8 +21,8 @@
       "keywords": "Alejandro Perez-canto portfolio, web developer portfolio, frontend projects, UI/UX design work, React apps, Next.js projects, Tailwind CSS portfolio, scalable web applications, coding portfolio, modern web development, software engineer work, project showcase, digital product design, developer case studies, frontend engineering, responsive web design, user interface examples, web development gallery"
     },
     "services": {
-      "title": "Services – Alejandro Perez-canto",
-      "description": "Professional services by Alejandro Perez-canto: custom web development, UI/UX design, and scalable solutions that drive your business growth with modern technology and a results-oriented approach.",
+      "title": "Web Development Services | Alejandro Perez-canto",
+      "description": "Custom Next.js web development: responsive design, UI/UX, performance, accessibility, SEO, multilingual sites and e-commerce, by Alejandro Perez-canto.",
       "keywords": "web development services, frontend development, UI/UX design, React developer, Next.js expert, Tailwind CSS developer, modern web solutions, scalable web applications, freelance web developer, Alejandro Perez-canto services, software engineering, website design, responsive development, component-based UI, digital product development, frontend performance, custom web solutions, user interface design, developer services"
     },
     "not-found": {
@@ -35,7 +35,6 @@
       "keywords": "thank you page, contact confirmation, Alejandro Perez-canto, web developer",
       "returnHome": "Go home"
     }
-   
   },
   "header": {
     "home": "Home",
@@ -102,7 +101,7 @@
     "viewAllServices": "View all services"
   },
   "skillsExperience": {
-    "skillsExperience": "Skills & Experience",
+    "skillsExperience": "Skills & Education",
     "experience": "Experience",
     "skills": "Skills",
     "stack": "Stack",
@@ -317,7 +316,7 @@
     "downloadCV": "Download CV",
     "emailLabel": "Send email",
     "githubLabel": "Visit GitHub profile",
-    "profileImageAlt": "Alejandro Perez-canto",
+    "profileImageAlt": "Alejandro Perez-canto, full-stack developer, wearing a black t-shirt and glasses in front of a cathedral under a cloudy sky",
     "aboutMeTitle": "About Me",
     "bio1": "I'm a passionate developer and designer with a deep interest in creating intuitive, user-centered digital experiences. My journey in tech began over 5 years ago, and I've since worked with startups, agencies, and established companies to build products that users love.",
     "bio2": "With a background in Systems Engineering and a keen eye for design, I aim to bridge the gap between functionality and aesthetics. I believe that the best digital products are those that solve real problems, while providing a seamless, enjoyable user experience.",
@@ -407,6 +406,144 @@
         "longDescription": "Maintaining the original design, I introduced multi-language support and SEO pages. Targeted optimisations ensured a fast, responsive and globally accessible site.",
         "challenges": "Integrating multi-language support and SEO optimisation while ensuring performance demanded careful planning.",
         "role": "Full-Stack Developer"
+      }
+    }
+  },
+  "homeSections": {
+    "process": {
+      "title": "How I work",
+      "intro": "A short, transparent process: you always know where your project stands.",
+      "steps": {
+        "discover": {
+          "title": "Discovery",
+          "body": "I learn your business, your audience and what the site has to achieve. We leave with a clear scope and agreed priorities."
+        },
+        "design": {
+          "title": "Design",
+          "body": "I define structure, content and visual style. You review real screens before any production code is written."
+        },
+        "build": {
+          "title": "Development",
+          "body": "I build with Next.js, TypeScript and Tailwind CSS, with performance, accessibility and SEO in place from day one."
+        },
+        "launch": {
+          "title": "Launch and support",
+          "body": "I ship, measure and refine. Afterwards I stay available for maintenance and new features."
+        }
+      }
+    },
+    "principles": {
+      "title": "What guides every project",
+      "items": {
+        "user": {
+          "title": "User-centered design",
+          "body": "Every decision starts with who will use the site and what they need to do."
+        },
+        "simplicity": {
+          "title": "Simplicity and clarity",
+          "body": "Fewer elements, better chosen. If something does not help, it goes."
+        },
+        "efficiency": {
+          "title": "Efficiency",
+          "body": "Fast sites and maintainable code: what loads fast converts better."
+        },
+        "learning": {
+          "title": "Continuous learning",
+          "body": "The web changes every year; so does the way I work."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": {
+        "remote": {
+          "q": "Do you work with clients in other countries?",
+          "a": "Yes. I work remotely with clients anywhere in the world, and if you prefer to talk face to face, we can schedule a video call."
+        },
+        "stack": {
+          "q": "What technologies do you use?",
+          "a": "On the frontend I use React, Next.js, TypeScript and Tailwind CSS. On the backend, Node.js and Laravel, with MongoDB or MySQL databases. I deploy on Vercel or cPanel."
+        },
+        "redesign": {
+          "q": "Can you redesign or migrate my current site?",
+          "a": "Yes. I can rebuild it completely or keep your current design and move it to a faster, easier-to-maintain foundation such as Next.js."
+        },
+        "languages": {
+          "q": "Do you build multilingual sites?",
+          "a": "Yes. This site runs in Spanish and English. I set up each language with its own URLs and SEO so people find you in both."
+        },
+        "timing": {
+          "q": "How long does a project take?",
+          "a": "It depends on the scope. Tell me about your idea and I will send you a proposal with clear timelines."
+        },
+        "support": {
+          "q": "What happens after launch?",
+          "a": "I offer maintenance and support: updates, monitoring and new features whenever you need them."
+        }
+      }
+    },
+    "help": {
+      "title": "How I can help",
+      "intro": "Pick the starting point closest to yours. If it is not listed, tell me anyway.",
+      "cta": "Tell me what you need",
+      "items": {
+        "newSite": {
+          "title": "New website",
+          "body": "From scratch: structure, design and development of a fast site that clearly explains what you do."
+        },
+        "redesign": {
+          "title": "Redesign",
+          "body": "I refresh a site that looks dated or does not convert, without losing what already works."
+        },
+        "migration": {
+          "title": "Migration to Next.js",
+          "body": "I move your site from static HTML or another platform to Next.js for speed and SEO."
+        },
+        "multilang": {
+          "title": "Multilingual site",
+          "body": "Your content in several languages, with correct URLs and SEO for each version."
+        },
+        "ecommerce": {
+          "title": "Online store",
+          "body": "Custom e-commerce with secure payments and a frictionless checkout."
+        },
+        "care": {
+          "title": "Maintenance",
+          "body": "Updates, monitoring and continuous improvements after launch."
+        }
+      }
+    },
+    "includes": {
+      "title": "What every project includes",
+      "intro": "The basics done right are not an extra charge: they come standard.",
+      "items": {
+        "responsive": "Responsive design for mobile, tablet and desktop",
+        "seo": "Technical SEO: metadata, sitemap and structured data",
+        "a11y": "Accessibility following WCAG guidelines",
+        "perf": "Performance optimization and Core Web Vitals",
+        "analytics": "Analytics set up to measure results",
+        "deploy": "Deployment on Vercel or your own hosting"
+      }
+    },
+    "why": {
+      "title": "Why work with me",
+      "items": {
+        "oneHead": {
+          "title": "Design and code in one person",
+          "body": "No hand-offs between designer and developer: what you approve is what gets built."
+        },
+        "bilingual": {
+          "title": "Spanish and English",
+          "body": "I work and deliver in both languages, ideal for businesses with international clients."
+        },
+        "remote": {
+          "title": "Remote, without borders",
+          "body": "I work with clients in any country, by email or video call."
+        },
+        "quality": {
+          "title": "Technical quality from day one",
+          "body": "Performance, accessibility and SEO are not extras: they are part of the job."
+        }
       }
     }
   }

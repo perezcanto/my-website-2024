@@ -37,3 +37,9 @@ export { default as HomeSchema } from '@/meta-schema/HomeSchema';
 export { default as ContactSchema } from '@/meta-schema/ContactSchema';
 export { default as PortfolioSchema } from '@/meta-schema/PortfolioSchema';
 export { default as ServicesSchema } from '@/meta-schema/ServicesSchema'
+export { default as Process } from "./sections/Process";
+export { default as Principles } from "./sections/Principles";
+export { default as Faq } from "./sections/Faq";
+export { default as Help } from "./sections/Help";
+export { default as Includes } from "./sections/Includes";
+export { default as Why } from "./sections/Why";

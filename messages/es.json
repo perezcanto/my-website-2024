@@ -1,18 +1,18 @@
 {
   "metadata": {
     "home": {
-      "title": "Alejandro Perez-canto – Desarrollador Full-Stack",
-      "description": "Desarrollador Full-Stack especializado en crear experiencias web modernas y atractivas. Diseño y desarrollo aplicaciones de alto rendimiento centradas en el usuario utilizando React, Next.js, TypeScript y otras tecnologías de vanguardia.",
+      "title": "Alejandro Perez-canto | Desarrollador Full-Stack React y Next.js",
+      "description": "Alejandro Perez-canto es desarrollador full-stack y diseñador UI/UX. Creo sitios web rápidos, accesibles y optimizados para SEO con React, Next.js y TypeScript.",
       "keywords": "Alejandro Perez-canto, desarrollador full-stack, desarrollador frontend, React, Next.js, TypeScript, JavaScript, Tailwind CSS, UI/UX, desarrollo web, diseño responsivo, optimización de rendimiento, integración de API, ingeniero de software, React Native, SSR, SSG, PWA, frameworks modernos, código limpio, CI/CD, Vercel, Netlify, GitHub Actions, accesibilidad, SEO, portafolio de desarrollador, código abierto, desarrollo ágil, aplicaciones escalables, UI interactiva, desarrollo basado en componentes, experiencia de usuario, interfaces modernas, soluciones digitales"
     },
     "about": {
-      "title": "Sobre Alejandro Perez-canto – Desarrollador Full-Stack",
-      "description": "Conozca la trayectoria profesional, habilidades y filosofía de desarrollo de Alejandro Perez-canto, un desarrollador Full-Stack con amplia experiencia en tecnologías web modernas. Especializado en crear soluciones digitales eficientes y elegantes que combinan excelencia técnica con diseño centrado en el usuario.",
+      "title": "Sobre Alejandro Perez-canto | Desarrollador Full-Stack",
+      "description": "Conoce a Alejandro Perez-canto: desarrollador full-stack con más de 5 años creando aplicaciones web con React, Next.js y TypeScript. Formación, stack y valores.",
       "keywords": "Alejandro Perez-canto, desarrollador full-stack, especialista frontend, diseñador UI/UX, desarrollador React, experto en Next.js, desarrollador Tailwind CSS, programador TypeScript, ingeniero JavaScript, desarrollo web moderno, creador de productos digitales, arquitecto de aplicaciones web, habilidades frontend, experiencia en UI/UX, soluciones web escalables, optimización de rendimiento, diseño responsivo, arquitectura de componentes"
     },
     "contact": {
-      "title": "Contacto – Alejandro Perez-canto",
-      "description": "Póngase en contacto con Alejandro Perez-canto para colaboraciones, oportunidades freelance o consultas de desarrollo web. Conectemos y creemos experiencias digitales excepcionales.",
+      "title": "Contacto | Alejandro Perez-canto, Desarrollador Full-Stack",
+      "description": "¿Tienes un proyecto web? Escribe a Alejandro Perez-canto. Trabajo en remoto con clientes de todo el mundo, por correo o videollamada.",
       "keywords": "contactar a Alejandro Perez-canto, contratar desarrollador web, desarrollador frontend freelance, contacto desarrollador React, experto Next.js, desarrollador Tailwind CSS, consulta UI/UX, ingeniero frontend, consultas de desarrollador de software, colaboración en proyectos, servicios de desarrollo web, soluciones digitales, aplicaciones web escalables, soporte frontend, trabajar con desarrollador, mejoras de sitios web, desarrollo web moderno, formulario de contacto de desarrollador, consultas de negocios, consulta de programación"
     },
     "portfolio": {
@@ -21,8 +21,8 @@
       "keywords": "portafolio de Alejandro Perez-canto, portafolio de desarrollador web, proyectos frontend, trabajos de diseño UI/UX, aplicaciones React, proyectos Next.js, portafolio Tailwind CSS, aplicaciones web escalables, portafolio de código, desarrollo web moderno, trabajos de ingeniero de software, muestra de proyectos, diseño de productos digitales, casos de estudio de desarrollador, ingeniería frontend, diseño web responsivo, ejemplos de interfaz de usuario, galería de desarrollo web"
     },
     "services": {
-      "title": "Servicios – Alejandro Perez-canto",
-      "description": "Servicios profesionales de Alejandro Perez-canto: desarrollo web a medida, diseño UI/UX y soluciones escalables que impulsan el crecimiento digital de su negocio con tecnología moderna y enfoque en resultados.",
+      "title": "Servicios de desarrollo web | Alejandro Perez-canto",
+      "description": "Desarrollo web a medida con Next.js: diseño responsive, UI/UX, rendimiento, accesibilidad, SEO, sitios multi-idioma y e-commerce, por Alejandro Perez-canto.",
       "keywords": "servicios de desarrollo web, desarrollo frontend, diseño UI/UX, desarrollador React, experto en Next.js, desarrollador Tailwind CSS, soluciones web modernas, aplicaciones web escalables, desarrollador web freelance, servicios de Alejandro Perez-canto, ingeniería de software, diseño de sitios web, desarrollo responsivo, UI basada en componentes, desarrollo de productos digitales, rendimiento frontend, soluciones web personalizadas, diseño de interfaz de usuario, servicios de desarrollador"
     },
     "not-found": {
@@ -34,7 +34,6 @@
       "description": "¡Gracias por contactarme! Tu mensaje ha sido enviado correctamente.",
       "keywords": "thank you page, contact confirmation, Alejandro Perez-canto, web developer",
       "returnHome": "Regresar a la página de inicio"
-      
     }
   },
   "header": {
@@ -102,7 +101,7 @@
     "viewAllServices": "Ver todos los servicios"
   },
   "skillsExperience": {
-    "skillsExperience": "Habilidades y Experiencia",
+    "skillsExperience": "Habilidades y Formación",
     "experience": "Experiencia",
     "skills": "Habilidades",
     "stack": "Stack",
@@ -317,7 +316,7 @@
     "downloadCV": "Descargar CV",
     "emailLabel": "Enviar email",
     "githubLabel": "Visitar perfil de GitHub",
-    "profileImageAlt": "Alejandro Perez-canto",
+    "profileImageAlt": "Alejandro Perez-canto, desarrollador full-stack, con camiseta negra y lentes frente a una catedral bajo un cielo nublado",
     "aboutMeTitle": "Sobre Mí",
     "bio1": "Soy un desarrollador y diseñador. Mi viaje en tecnología comenzó hace más de 5 años, y desde entonces he trabajado con startups, agencias y empresas establecidas para construir productos que los usuarios aman.",
     "bio2": "Con formación en Ingeniería de Sistemas y un ojo agudo para el diseño, busco cerrar la brecha entre funcionalidad y estética. Creo que los mejores productos digitales son aquellos que resuelven problemas reales, mientras proporcionan una experiencia de usuario fluida y agradable.",
@@ -407,6 +406,144 @@
         "longDescription": "Manteniendo el diseño original, incorporé soporte multi-idioma y páginas SEO. Las optimizaciones garantizan un sitio rápido, responsive y accesible globalmente.",
         "challenges": "Combinar soporte multi-idioma y SEO sin sacrificar rendimiento requirió planificación detallada.",
         "role": "Desarrollador Full-Stack"
+      }
+    }
+  },
+  "homeSections": {
+    "process": {
+      "title": "Cómo trabajo",
+      "intro": "Un proceso corto y transparente: sabes en qué punto está tu proyecto en todo momento.",
+      "steps": {
+        "discover": {
+          "title": "Descubrimiento",
+          "body": "Entiendo tu negocio, tu audiencia y qué tiene que lograr el sitio. Salimos con un alcance claro y prioridades acordadas."
+        },
+        "design": {
+          "title": "Diseño",
+          "body": "Defino estructura, contenido y estilo visual. Revisas pantallas reales antes de escribir una línea de producción."
+        },
+        "build": {
+          "title": "Desarrollo",
+          "body": "Construyo con Next.js, TypeScript y Tailwind CSS, cuidando rendimiento, accesibilidad y SEO desde el primer día."
+        },
+        "launch": {
+          "title": "Lanzamiento y soporte",
+          "body": "Publico, mido y ajusto. Después sigo disponible para mantenimiento y nuevas funcionalidades."
+        }
+      }
+    },
+    "principles": {
+      "title": "Lo que guía cada proyecto",
+      "items": {
+        "user": {
+          "title": "Diseño centrado en el usuario",
+          "body": "Cada decisión empieza por quién va a usar el sitio y qué necesita hacer."
+        },
+        "simplicity": {
+          "title": "Simplicidad y claridad",
+          "body": "Menos elementos, mejor elegidos. Si algo no ayuda, sobra."
+        },
+        "efficiency": {
+          "title": "Eficiencia",
+          "body": "Sitios rápidos y código mantenible: lo que carga rápido convierte mejor."
+        },
+        "learning": {
+          "title": "Aprendizaje continuo",
+          "body": "La web cambia cada año; mi forma de trabajar también."
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": {
+        "remote": {
+          "q": "¿Trabajas con clientes de otros países?",
+          "a": "Sí. Trabajo de forma remota con clientes de cualquier parte del mundo, y si prefieres hablar cara a cara, programamos una videollamada."
+        },
+        "stack": {
+          "q": "¿Con qué tecnologías trabajas?",
+          "a": "En frontend uso React, Next.js, TypeScript y Tailwind CSS. En backend, Node.js y Laravel, con bases de datos MongoDB o MySQL. Despliego en Vercel o cPanel."
+        },
+        "redesign": {
+          "q": "¿Puedes rediseñar o migrar mi sitio actual?",
+          "a": "Sí. Puedo renovarlo por completo o conservar tu diseño actual y migrarlo a una base más rápida y fácil de mantener, como Next.js."
+        },
+        "languages": {
+          "q": "¿Haces sitios en varios idiomas?",
+          "a": "Sí. Este mismo sitio funciona en español e inglés. Configuro cada idioma con sus propias URLs y SEO para que te encuentren en ambos."
+        },
+        "timing": {
+          "q": "¿Cuánto tarda un proyecto?",
+          "a": "Depende del alcance. Cuéntame tu idea y te envío una propuesta con plazos claros."
+        },
+        "support": {
+          "q": "¿Qué pasa después del lanzamiento?",
+          "a": "Ofrezco mantenimiento y soporte: actualizaciones, monitoreo y nuevas funcionalidades cuando las necesites."
+        }
+      }
+    },
+    "help": {
+      "title": "Cómo puedo ayudarte",
+      "intro": "Elige el punto de partida que se parece a tu caso. Si no está aquí, cuéntamelo igual.",
+      "cta": "Cuéntame qué necesitas",
+      "items": {
+        "newSite": {
+          "title": "Sitio web nuevo",
+          "body": "Desde cero: estructura, diseño y desarrollo de un sitio rápido que explica con claridad lo que haces."
+        },
+        "redesign": {
+          "title": "Rediseño",
+          "body": "Renuevo un sitio que se ve anticuado o no convierte, sin perder lo que ya funciona."
+        },
+        "migration": {
+          "title": "Migración a Next.js",
+          "body": "Llevo tu sitio desde HTML estático u otra plataforma a Next.js para ganar velocidad y SEO."
+        },
+        "multilang": {
+          "title": "Sitio multi-idioma",
+          "body": "Tu contenido en varios idiomas, con URLs y SEO correctos para cada versión."
+        },
+        "ecommerce": {
+          "title": "Tienda online",
+          "body": "E-commerce a medida con pagos seguros y un proceso de compra sin fricción."
+        },
+        "care": {
+          "title": "Mantenimiento",
+          "body": "Actualizaciones, monitoreo y mejoras continuas después del lanzamiento."
+        }
+      }
+    },
+    "includes": {
+      "title": "Qué incluye cada proyecto",
+      "intro": "Lo básico bien hecho no se cobra aparte: viene de serie.",
+      "items": {
+        "responsive": "Diseño responsive para móvil, tablet y escritorio",
+        "seo": "SEO técnico: metadatos, sitemap y datos estructurados",
+        "a11y": "Accesibilidad según las pautas WCAG",
+        "perf": "Optimización de rendimiento y Core Web Vitals",
+        "analytics": "Analítica configurada para medir resultados",
+        "deploy": "Despliegue en Vercel o en tu hosting"
+      }
+    },
+    "why": {
+      "title": "Por qué trabajar conmigo",
+      "items": {
+        "oneHead": {
+          "title": "Diseño y código en una sola persona",
+          "body": "Sin traspasos entre diseñador y programador: lo que apruebas es lo que se construye."
+        },
+        "bilingual": {
+          "title": "Español e inglés",
+          "body": "Trabajo y entrego en ambos idiomas, ideal para negocios con clientes internacionales."
+        },
+        "remote": {
+          "title": "Remoto, sin fronteras",
+          "body": "Colaboro con clientes de cualquier país, por correo o videollamada."
+        },
+        "quality": {
+          "title": "Calidad técnica desde el día uno",
+          "body": "Rendimiento, accesibilidad y SEO no son extras: forman parte del trabajo."
+        }
       }
     }
   }

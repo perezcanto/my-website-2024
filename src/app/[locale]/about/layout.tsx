@@ -1,60 +1,39 @@
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { AboutSchema } from '@/components'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { asLocale, breadcrumbNode, buildMetadata, graph, personPhotoNode, webPageNode } from '@/lib/seo'
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
+type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const locale = asLocale((await params).locale)
   const t = await getTranslations({ locale, namespace: 'metadata.about' })
-  
-  return {
-    title: t("title"),
-    description: t("description"),
-    keywords: t("keywords"),
-    
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      images: [
-        {
-          url: `${process.env.APP_URL}/images/hero.png`,
-          width: 800,
-          height: 600,
-        },
-      ],
-    },
-    twitter: {
-      images: [
-        {
-          url: `${process.env.APP_URL}/images/hero.png`,
-          width: 800,
-          height: 600,
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://www.perez-canto.com/${locale}/about`,
-      languages: {
-        'en': 'https://www.perez-canto.com/en/about',
-        'es': 'https://www.perez-canto.com/es/acerca',
-      },
-    },
-    robots: { index: true, follow: true }
-  };
+  return buildMetadata({ page: 'about', locale, title: t('title'), description: t('description') })
 }
 
-export default function RootLayout({
+export default async function AboutLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params,
+}: Readonly<{ children: React.ReactNode }> & Props) {
+  const locale = asLocale((await params).locale)
+  const t = await getTranslations({ locale, namespace: 'metadata.about' })
+  const nav = await getTranslations({ locale, namespace: 'navigation' })
+
   return (
     <>
-      <AboutSchema />
+      <JsonLd
+        data={graph(
+          webPageNode({
+            locale,
+            page: 'about',
+            type: ['AboutPage', 'ProfilePage'],
+            name: t('title'),
+            description: t('description'),
+          }),
+          breadcrumbNode(locale, 'about', nav('about')),
+          personPhotoNode(),
+        )}
+      />
       {children}
     </>
   )

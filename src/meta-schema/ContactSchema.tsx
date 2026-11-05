@@ -15,7 +15,7 @@ export default function ContactSchema() {
       "availableLanguage": locale === 'en' ? "English" : "Spanish"
     },
     "sameAs": [
-      "www.linkedin.com/in/alejandro-perez-canto-8b8432193",
+      "https://www.linkedin.com/in/alejandro-perez-canto-8b8432193",
       "https://github.com/perezcanto"
     ]
   }

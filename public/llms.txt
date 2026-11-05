@@ -1,0 +1,52 @@
+# Alejandro Perez-canto
+
+> Alejandro Perez-canto (also written Perez-canto, Perezcanto or Alejandro Pérez Canto) is a full-stack developer and UI/UX designer. He builds fast, accessible, multilingual and SEO-optimized websites and web applications with React, Next.js, TypeScript and Tailwind CSS, and works remotely with clients worldwide in Spanish and English. Website: https://www.perez-canto.com
+
+## Who he is
+
+- Name: Alejandro Perez-canto
+- Role: Full-Stack Developer and UI/UX designer (Spanish: Desarrollador Full-Stack)
+- Experience: more than 5 years building digital products for startups, agencies and established companies
+- Education: studying Systems Engineering at Universidad Santiago Mariño (2022 to present); professional certifications from Udemy, Platzi and Skillshare
+- Languages: Spanish and English
+- Works: remotely, with clients anywhere in the world; meetings by video call
+- Contact: alejandroperezcanto@gmail.com
+- GitHub: https://github.com/perezcanto
+- LinkedIn: https://www.linkedin.com/in/alejandro-perez-canto-8b8432193
+
+## Skills and stack
+
+- Frontend: React, Next.js, TypeScript, JavaScript, Tailwind CSS
+- Backend: Node.js, Laravel, PHP
+- Databases: MongoDB, MySQL
+- Design: UI/UX design, Figma, Adobe XD
+- Performance: Core Web Vitals, Lighthouse, Webpack, bundling
+- Deployment: Vercel, cPanel, Git
+
+## Services
+
+- Responsive web design
+- UI/UX design
+- Performance optimization
+- Web accessibility (WCAG)
+- SEO and marketing
+- E-commerce solutions
+- Multilingual websites and internationalization (i18n)
+- Maintenance and support
+- Database management, cloud and API integrations
+
+## How he works
+
+1. Discovery: understand the business, audience and goals; agree on scope and priorities.
+2. Design: define structure, content and visual style; the client reviews real screens first.
+3. Development: build with Next.js, TypeScript and Tailwind CSS, with performance, accessibility and SEO from day one.
+4. Launch and support: ship, measure, refine, then ongoing maintenance and new features.
+
+## Pages
+
+- [Home (English)](https://www.perez-canto.com/en): overview, services, process and FAQ
+- [Inicio (Español)](https://www.perez-canto.com/es): resumen, servicios, proceso y preguntas frecuentes
+- [About](https://www.perez-canto.com/en/about) · [Sobre mí](https://www.perez-canto.com/es/acerca): biography, skills, education and values
+- [Services](https://www.perez-canto.com/en/services) · [Servicios](https://www.perez-canto.com/es/servicios): full list of web development services
+- [Contact](https://www.perez-canto.com/en/contact) · [Contacto](https://www.perez-canto.com/es/contacto): project inquiries
+- [Resume (EN, PDF)](https://www.perez-canto.com/assets/resume-alejandro-perez-canto-en.pdf) · [CV (ES, PDF)](https://www.perez-canto.com/assets/resume-alejandro-perez-canto-es.pdf)

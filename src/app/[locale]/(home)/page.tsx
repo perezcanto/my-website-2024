@@ -1,4 +1,16 @@
-import { SimpleCta, Hero, Services, Contact, SkillsExperience } from '@/components'
+import {
+  SimpleCta,
+  Hero,
+  Services,
+  Contact,
+  SkillsExperience,
+  Help,
+  Includes,
+  Why,
+  Process,
+  Principles,
+  Faq,
+} from '@/components'
 import { getTranslations } from 'next-intl/server'
 
 type Props = {
@@ -20,7 +32,13 @@ export default async function Home({ params }: Props) {
         ctaLabel={t('ctaLabel')}
       />
       <Services />
+      <Help />
+      <Process />
+      <Includes />
       <SkillsExperience />
+      <Why />
+      <Principles />
+      <Faq />
       <SimpleCta />
       <Contact sub />
     </>
